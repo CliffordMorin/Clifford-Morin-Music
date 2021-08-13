@@ -1,163 +1,84 @@
-import React from "react";
+import React from 'react';
 // nodejs library that concatenates classes
-import classNames from "classnames";
+import classNames from 'classnames';
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from '@material-ui/core/styles';
 
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import Button from 'components/CustomButtons/Button.js';
+import Card from 'components/Card/Card.js';
+import CardBody from 'components/Card/CardBody.js';
+import CardFooter from 'components/Card/CardFooter.js';
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
+import styles from 'assets/jss/material-kit-react/views/landingPageSections/teamStyle.js';
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from 'assets/img/faces/avatar.jpg';
+import team2 from 'assets/img/faces/christian.jpg';
+import team3 from 'assets/img/faces/kendall.jpg';
 
 const useStyles = makeStyles(styles);
 
 export default function TeamSection() {
-  const classes = useStyles();
-  const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
-    classes.imgFluid
-  );
-  return (
-    <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
-      <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Gigi Hadid
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
-              </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Christian Louboutin
-                <br />
-                <small className={classes.smallTitle}>Designer</small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
-              </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Kendall Jenner
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
-              </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
-            </Card>
-          </GridItem>
-        </GridContainer>
-      </div>
-    </div>
-  );
+	const classes = useStyles();
+	const imageClasses = classNames(classes.imgRaised, classes.imgRoundedCircle, classes.imgFluid);
+	return (
+		<div className={classes.section}>
+			<h2 className={classes.title}>Biography</h2>
+			<div>
+				<GridContainer>
+					<GridItem xs={12} sm={12} md={6}>
+						<h5 className={classes.description}>
+							Clifford Morin is an eclectic Saxophonist, multi-woodwind instrumentalist and composer based
+							out of Philadelphia. As a free lance musician Clifford regularly performs and records with
+							many different style’s of music in NYC, Philadelphia, and Europe.
+							<br />
+							<br />
+							Clifford has a BM in Jazz Performance from West Chester University where he studied with
+							first call broadway woodwind musician Greg Riley and world renowned Jazz trumpeter and EVI
+							player John Swana.
+							<br />
+							<br />
+							He recently graduated from Temple University with MM in Jazz Performance as well as attended
+							Amsterdam Conservatory of Music (Netherlands) during his graduate studies. During his time
+							at Temple university he was second alto in big band lead by Terell Stafford. He had the
+							opportunity to perform at venue’s such as Jazz at the Lincoln center’s Appel Room, Dizzy’s
+							Coca Cola Club, Kimmel Center along side artist’s such as Jon Faddis, Joe Lovano, Jimmy
+							Heath, John Clayton, René Marie, Sean Jones, Tim Warfield, Terell Stafford, Dick Oatts, Ann
+							Hampton Calloway and Rodney Green. While at Temple he studied with Virtuosic Tenor
+							Saxophonist Ben Schacter, world renowned woodwind and lead alto saxophonist of the Thad
+							Jones Mel Lewis Jazz orchestra (Village Vanguard) for the last 40 years; Dick Oatts, along
+							with other artist’s such as Tim Warfield, Warren Wolf, Mike Moreno, Jeff Tain Watts, Peter
+							Bernstein, Alex Sipiagin and Rodney Green.
+						</h5>
+					</GridItem>
+					<GridItem xs={12} sm={12} md={6}>
+						<h5 className={classes.description}>
+							During his studies at Amsterdam Conservatory of Music Clifford studied with Prodigy alto
+							saxophonist Ben Van Gelder, Dutch tenor saxophonist Jasper Blom, and metropole orkest’s lead
+							tenor saxophonist Leo Jannsen. Clifford was lead alto in the conservatory big band and
+							performed at venue’s such as Bimhuis and Amsterdam Blue Note.
+							<br />
+							<br />
+							During the summer of 2014, 2015, and 2019, Clifford was chosen to be an artist in residence
+							at Boysie Lowery Jazz/ Composition Residency in Wilmington Delaware where he recorded in
+							Philadelphia’s WRTI studio, composed and performed with the Philadelphia String Quintet,
+							performed at the Clifford Brown Jazz Festival and studied under artist’s such as Aaron
+							Parks, Aaron Goldberg, Ari Hoenig, Aaron Diehl, Melissa Aldana, Warren Wolf, and Mike Boone
+							to name a few.
+							<br />
+							<br />
+							Clifford currently resides in Philadelphia where he maintains an avid freelance performing
+							and recording career. Performing with band’s such as Clifford Morin Quartet, David Bamber
+							Project, TMA (The Morning After Band), Steven Perry’s Dual Image, Habanero Latin Band,
+							Arturo Stable not so latin trio, Arturo Stable not so latin Big band.
+						</h5>
+					</GridItem>
+				</GridContainer>
+			</div>
+		</div>
+	);
 }
