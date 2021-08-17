@@ -8,8 +8,24 @@ import Nav from './components/Nav';
 import './styles/app.scss';
 //Import Data
 import data from './data';
+//Material ui
+// core components
+import Header from 'components/Header/Header.js';
+import Footer from 'components/Footer/Footer.js';
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
+import Button from 'components/CustomButtons/Button.js';
+import HeaderLinks from 'components/Header/HeaderLinks.js';
+// nodejs library that concatenates classes
+import classNames from 'classnames';
+// @material-ui/core components
+import { makeStyles } from '@material-ui/core/styles';
+import styles from 'assets/jss/material-kit-react/views/landingPage.js';
 
-function MusicPlayPage() {
+const dashboardRoutes = [];
+const useStyles = makeStyles(styles);
+
+function MusicPlayPage(props) {
 	//Ref
 	const audioRef = useRef(null);
 	//State
@@ -37,36 +53,50 @@ function MusicPlayPage() {
 		await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
 		if (isPlaying) audioRef.current.play();
 	};
+
+	//material ui
+	const classes = useStyles();
+	const { ...rest } = props;
 	return (
-		<div className={`App ${libraryStatus ? 'library-active' : ''}`}>
-			<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
-			<Song currentSong={currentSong} />
-			<Player
-				setSongInfo={setSongInfo}
-				songInfo={songInfo}
-				audioRef={audioRef}
-				setIsPlaying={setIsPlaying}
-				isPlaying={isPlaying}
-				currentSong={currentSong}
-				songs={songs}
-				setCurrentSong={setCurrentSong}
-				setSongs={setSongs}
+		<div>
+			<Header
+				color="info"
+				routes={dashboardRoutes}
+				brand="Clifford Morin"
+				rightLinks={<HeaderLinks />}
+				fixed
+				{...rest}
 			/>
-			<Library
-				setSongs={setSongs}
-				isPlaying={isPlaying}
-				audioRef={audioRef}
-				songs={songs}
-				setCurrentSong={setCurrentSong}
-				libraryStatus={libraryStatus}
-			/>
-			<audio
-				onTimeUpdate={timeUpdateHandler}
-				onLoadedMetadata={timeUpdateHandler}
-				ref={audioRef}
-				src={currentSong.audio}
-				onEnded={songEndHandler}
-			/>
+			<div className={`App ${libraryStatus ? 'library-active' : ''}`}>
+				<Nav libraryStatus={libraryStatus} setLibraryStatus={setLibraryStatus} />
+				<Song currentSong={currentSong} />
+				<Player
+					setSongInfo={setSongInfo}
+					songInfo={songInfo}
+					audioRef={audioRef}
+					setIsPlaying={setIsPlaying}
+					isPlaying={isPlaying}
+					currentSong={currentSong}
+					songs={songs}
+					setCurrentSong={setCurrentSong}
+					setSongs={setSongs}
+				/>
+				<Library
+					setSongs={setSongs}
+					isPlaying={isPlaying}
+					audioRef={audioRef}
+					songs={songs}
+					setCurrentSong={setCurrentSong}
+					libraryStatus={libraryStatus}
+				/>
+				<audio
+					onTimeUpdate={timeUpdateHandler}
+					onLoadedMetadata={timeUpdateHandler}
+					ref={audioRef}
+					src={currentSong.audio}
+					onEnded={songEndHandler}
+				/>
+			</div>
 		</div>
 	);
 }

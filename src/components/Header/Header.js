@@ -15,6 +15,7 @@ import Drawer from '@material-ui/core/Drawer';
 import Menu from '@material-ui/icons/Menu';
 // core components
 import styles from 'assets/jss/material-kit-react/components/headerStyle.js';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(styles);
 
@@ -57,15 +58,17 @@ export default function Header(props) {
 		<AppBar className={appBarClasses}>
 			<Toolbar className={classes.container}>
 				{leftLinks !== undefined ? brandComponent : null}
-				<div className={classes.flex}>
-					{leftLinks !== undefined ? (
-						<Hidden smDown implementation="css">
-							{leftLinks}
-						</Hidden>
-					) : (
-						brandComponent
-					)}
-				</div>
+				<Link to="/landing-page" style={{ textDecoration: 'none', color: 'white' }}>
+					<div className={classes.flex}>
+						{leftLinks !== undefined ? (
+							<Hidden smDown implementation="css">
+								{leftLinks}
+							</Hidden>
+						) : (
+							brandComponent
+						)}
+					</div>
+				</Link>
 				<Hidden smDown implementation="css">
 					{rightLinks}
 				</Hidden>

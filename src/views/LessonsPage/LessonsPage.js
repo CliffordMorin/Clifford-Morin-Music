@@ -53,7 +53,7 @@ export default function LessonPage(props) {
 				fixed
 				changeColorOnScroll={{
 					height: 200,
-					color: 'rose'
+					color: 'info'
 				}}
 				{...rest}
 			/>
