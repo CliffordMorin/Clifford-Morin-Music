@@ -4,6 +4,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
 // react components for routing our app without refresh
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 // @material-ui/core components
 import { makeStyles } from '@material-ui/core/styles';
@@ -21,6 +22,16 @@ import Button from 'components/CustomButtons/Button.js';
 import styles from 'assets/jss/material-kit-react/components/headerLinksStyle.js';
 
 const useStyles = makeStyles(styles);
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+	color: white;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+		color: white;
+    }
+`;
 
 export default function HeaderLinks(props) {
 	const classes = useStyles();
@@ -50,18 +61,18 @@ export default function HeaderLinks(props) {
 				/>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link to="/music-play" style={{ textDecoration: 'none', color: 'white' }}>
+				<StyledLink to="/music-play">
 					<Button color="transparent" className={classes.navLink}>
 						<Audiotrack className={classes.icons} /> My Music
 					</Button>
-				</Link>
+				</StyledLink>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<Link to="/contact-me" style={{ textDecoration: 'none', color: 'white' }}>
+				<StyledLink to="/contact-me">
 					<Button color="transparent" className={classes.navLink}>
 						<EmojiPeople className={classes.icons} /> Contact Me
 					</Button>
-				</Link>
+				</StyledLink>
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				{/*<Tooltip title="Delete">
