@@ -62,7 +62,7 @@ function MusicPlayPage(props) {
 			<Header
 				color="info"
 				routes={dashboardRoutes}
-				brand="Clifford Morin"
+				brand="Clifford Morin Music"
 				rightLinks={<HeaderLinks />}
 				fixed
 				{...rest}

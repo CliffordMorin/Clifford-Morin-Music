@@ -37,7 +37,7 @@ export default function ContactPage(props) {
 
 	return (
 		<div>
-			<Header absolute color="transparent" brand="Material Kit React" rightLinks={<HeaderLinks />} {...rest} />
+			<Header absolute color="transparent" brand="Clifford Morin Music" rightLinks={<HeaderLinks />} {...rest} />
 			<div
 				className={classes.pageHeader}
 				style={{
