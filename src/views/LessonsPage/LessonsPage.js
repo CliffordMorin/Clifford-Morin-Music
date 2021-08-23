@@ -48,7 +48,7 @@ export default function LessonPage(props) {
 		<div>
 			<Header
 				color="transparent"
-				brand="Clifford Morin"
+				brand="Clifford Morin Music"
 				rightLinks={<HeaderLinks />}
 				fixed
 				changeColorOnScroll={{
