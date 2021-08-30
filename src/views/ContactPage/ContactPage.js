@@ -23,7 +23,7 @@ import EmailSection from './Sections/EmailSection';
 
 import styles from 'assets/jss/material-kit-react/views/loginPage.js';
 
-import image from 'assets/img/bg7.jpg';
+import image from 'assets/img/BG/contactBG.jpg';
 
 const useStyles = makeStyles(styles);
 
