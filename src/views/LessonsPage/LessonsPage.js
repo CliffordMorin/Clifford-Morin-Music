@@ -22,7 +22,7 @@ import Card from 'components/Card/Card.js';
 import CardBody from 'components/Card/CardBody.js';
 import CardHeader from 'components/Card/CardHeader.js';
 
-import profile from 'assets/img/faces/christian.jpg';
+import profile from 'assets/img/cliffCloseUp/img1.jpeg';
 
 import studio1 from 'assets/img/examples/studio-1.jpg';
 import studio2 from 'assets/img/examples/studio-2.jpg';
@@ -57,7 +57,12 @@ export default function LessonPage(props) {
 				}}
 				{...rest}
 			/>
-			<Parallax small filter image={require('assets/img/profile-bg.jpg').default} />
+			<Parallax
+				small
+				filter
+				className={classes.mainImg}
+				image={require('assets/img/cliffBG/teaching.jpeg').default}
+			/>
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<div>
 					<div className={classes.container}>
@@ -69,7 +74,10 @@ export default function LessonPage(props) {
 									</div>
 									<div className={classes.name}>
 										<h3 className={classes.title}>Private Lessons</h3>
-										<h6>Saxophone/ EWI/ Piano/ Karnetic Rhythm/ Clarinet/ Flute</h6>
+										<h6>
+											Saxophone/ EWI/ Piano/ Guitar/ Karnetic Rhythm/ Clarinet/ Flute/ Music
+											Theory
+										</h6>
 									</div>
 								</div>
 							</GridItem>
@@ -98,17 +106,29 @@ export default function LessonPage(props) {
 									color="primary"
 									tabs={[
 										{
-											tabButton: 'Students',
+											tabButton: 'My Rates',
 											tabIcon: Camera,
 											tabContent: (
 												<GridContainer justify="center">
-													<GridItem xs={12} sm={12} md={4}>
-														<img alt="..." src={studio1} className={navImageClasses} />
-														<img alt="..." src={studio2} className={navImageClasses} />
-													</GridItem>
-													<GridItem xs={12} sm={12} md={4}>
-														<img alt="..." src={studio5} className={navImageClasses} />
-														<img alt="..." src={studio4} className={navImageClasses} />
+													<GridItem xs={12} sm={12} md={8}>
+														<Card>
+															<CardBody>
+																<CardHeader color="info" className={classes.cardTitle}>
+																	Pricing
+																</CardHeader>
+																<p>1 hour lesson- $65</p>
+																<p>30 min lesson- $35</p>
+																<p>
+																	Cancelation Policy: Please send an email or phone
+																	call within 24hrs of your scheduled lesson in case
+																	of an emergency or need to cancel your lesson. This
+																	gives Clifford time to adjust his schedule if
+																	necessary. There will be a $25 cancelation fee added
+																	to your next lesson should you fail to notify
+																	Clifford during this window of time.
+																</p>
+															</CardBody>
+														</Card>
 													</GridItem>
 												</GridContainer>
 											)
@@ -131,6 +151,25 @@ export default function LessonPage(props) {
 																<Star color="error" />
 																<Star color="error" />
 																<Star color="error" />
+																<Star color="error" />
+																<p>
+																	"Cliff is the best teacher ever. He has been
+																	teaching our kids for 2 years and they have made an
+																	immense amount of improvement. He is very flexible
+																	with time and is always on time."
+																</p>
+																<p>- Students Name here</p>
+															</CardBody>
+														</Card>
+														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+															<CardBody>
+																<CardHeader color="info" className={classes.cardTitle}>
+																	Clarinet
+																</CardHeader>
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
 																<StarHalf color="error" />
 																<p>
 																	"Cliff is the best teacher ever. He has been
@@ -141,12 +180,74 @@ export default function LessonPage(props) {
 																<p>- Students Name here</p>
 															</CardBody>
 														</Card>
-														<img alt="..." src={work2} className={navImageClasses} />
-														<img alt="..." src={work3} className={navImageClasses} />
+														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+															<CardBody>
+																<CardHeader
+																	color="warning"
+																	className={classes.cardTitle}
+																>
+																	Piano
+																</CardHeader>
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<StarHalf color="error" />
+																<p>
+																	"Cliff is the best teacher ever. He has been
+																	teaching our kids for 2 years and they have made an
+																	immense amount of improvement. He is very flexible
+																	with time and is always on time."
+																</p>
+																<p>- Students Name here</p>
+															</CardBody>
+														</Card>
 													</GridItem>
 													<GridItem xs={12} sm={12} md={4}>
-														<img alt="..." src={work4} className={navImageClasses} />
-														<img alt="..." src={work5} className={navImageClasses} />
+														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+															<CardBody>
+																<CardHeader
+																	color="primary"
+																	className={classes.cardTitle}
+																>
+																	Guitar
+																</CardHeader>
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<StarHalf color="error" />
+																<p>
+																	"Cliff is the best teacher ever. He has been
+																	teaching our kids for 2 years and they have made an
+																	immense amount of improvement. He is very flexible
+																	with time and is always on time."
+																</p>
+																<p>- Students Name here</p>
+															</CardBody>
+														</Card>
+														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+															<CardBody>
+																<CardHeader
+																	color="success"
+																	className={classes.cardTitle}
+																>
+																	Saxophone
+																</CardHeader>
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<Star color="error" />
+																<p>
+																	"Cliff is the best teacher ever. He has been
+																	teaching our kids for 2 years and they have made an
+																	immense amount of improvement. He is very flexible
+																	with time and is always on time."
+																</p>
+																<p>- Students Name here</p>
+															</CardBody>
+														</Card>
 													</GridItem>
 												</GridContainer>
 											)

@@ -46,7 +46,7 @@ export default function LandingPage(props) {
 				}}
 				{...rest}
 			/>
-			<Parallax filter image={require('assets/img/landing-bg.jpg').default}>
+			<Parallax filter className={classes.mainImg} image={require('assets/img/cliffCloseUp/img3.jpeg').default}>
 				<div className={classes.container}>
 					<GridContainer>
 						<GridItem xs={12} sm={12} md={6}>
