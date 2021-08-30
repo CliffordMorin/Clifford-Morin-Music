@@ -16,6 +16,10 @@ import group4 from 'assets/img/cliffGroups/group4.jpeg';
 import group5 from 'assets/img/cliffGroups/group5.jpeg';
 import group6 from 'assets/img/cliffGroups/group6.jpeg';
 import group7 from 'assets/img/cliffGroups/group7.jpeg';
+import panda1 from 'assets/img/pandanap/panda1.jpg';
+import panda2 from 'assets/img/pandanap/panda2.jpg';
+import panda3 from 'assets/img/pandanap/panda3.jpg';
+import panda4 from 'assets/img/pandanap/panda4.jpg';
 
 export default function SectionCarousel() {
 	const settings = {
@@ -52,6 +56,18 @@ export default function SectionCarousel() {
 						</div>
 						<div>
 							<img src={group7} alt="Third slide" className="slick-image" />
+						</div>
+						<div>
+							<img src={panda1} alt="Third slide" className="slick-image" />
+						</div>
+						<div>
+							<img src={panda2} alt="Third slide" className="slick-image" />
+						</div>
+						<div>
+							<img src={panda3} alt="Third slide" className="slick-image" />
+						</div>
+						<div>
+							<img src={panda4} alt="Third slide" className="slick-image" />
 						</div>
 					</Carousel>
 				</Card>

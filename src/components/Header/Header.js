@@ -58,7 +58,7 @@ export default function Header(props) {
 		<AppBar className={appBarClasses}>
 			<Toolbar className={classes.container}>
 				{leftLinks !== undefined ? brandComponent : null}
-				<Link to="/landing-page" style={{ textDecoration: 'none', color: 'white' }}>
+				<Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
 					<div className={classes.flex}>
 						{leftLinks !== undefined ? (
 							<Hidden smDown implementation="css">
