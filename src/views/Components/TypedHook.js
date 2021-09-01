@@ -56,9 +56,13 @@ const TypedHook = () => {
 };
 
 const StyledType = styled.div`
-	color: rgb(244, 67, 53);
+	color: rgb(0, 246, 250);
+	font-size: 2.5rem;
 	@media (max-width: 1300px) {
-		font-size: 2.5rem;
+		font-size: 2rem;
+	}
+	@media (max-width: 800px) {
+		font-size: 1.5rem;
 	}
 `;
 
