@@ -13,7 +13,7 @@ import ListItem from '@material-ui/core/ListItem';
 import Tooltip from '@material-ui/core/Tooltip';
 
 // @material-ui/icons
-import { Apps, Audiotrack, EmojiPeople } from '@material-ui/icons';
+import { Apps, Audiotrack, EmojiPeople, PlayCircleFilledOutlined, Album, VideoLibrary } from '@material-ui/icons';
 
 // core components
 import CustomDropdown from 'components/CustomDropdown/CustomDropdown.js';
@@ -61,11 +61,31 @@ export default function HeaderLinks(props) {
 				/>
 			</ListItem>
 			<ListItem className={classes.listItem}>
-				<StyledLink to="/music-play">
+				{/* <StyledLink to="/music-play">
 					<Button color="transparent" className={classes.navLink}>
 						<Audiotrack className={classes.icons} /> My Music
 					</Button>
-				</StyledLink>
+				</StyledLink> */}
+				<CustomDropdown
+					noLiPadding
+					buttonText="My Music"
+					buttonProps={{
+						className: classes.navLink,
+						color: 'transparent'
+					}}
+					buttonIcon={Audiotrack}
+					dropdownList={[
+						<Link to="/music-play" className={classes.dropdownLink}>
+							<PlayCircleFilledOutlined className={classes.icons} /> Listen Here!
+						</Link>,
+						<Link to="/discography" className={classes.dropdownLink}>
+							<Album className={classes.icons} />Discography
+						</Link>,
+						<Link to="/videos" className={classes.dropdownLink}>
+							<VideoLibrary className={classes.icons} /> Videos
+						</Link>
+					]}
+				/>
 			</ListItem>
 			<ListItem className={classes.listItem}>
 				<StyledLink to="/contact-me">
