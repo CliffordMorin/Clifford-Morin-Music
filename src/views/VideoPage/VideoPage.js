@@ -48,7 +48,7 @@ export default function VideoPage(props) {
 			>
 				<div className={classes.container}>
 					<GridContainer justify="center">
-						<GridItem xs={12} sm={12} md={10}>
+						<GridItem xs={12} sm={12} md={12}>
 							<Card className={classes[cardAnimaton]}>
 								<div>
 									<CardHeader color="primary" className={classes.cardHeader}>
