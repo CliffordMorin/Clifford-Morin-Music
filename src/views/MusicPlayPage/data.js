@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import lofiImg from 'assets/img/audioImg/out2.png';
 import sax from 'assets/img/cliffCloseUp/solo2.jpeg';
 import philly from 'assets/img/cliffCloseUp/out1.jpeg';
+import samImg from 'assets/img/audioImg/sam.png';
 //audio
 import lofiAudio from 'assets/audio/poLofi.m4a';
 import watts1 from 'assets/audio/Airegin Duo Jeff Tain Watts Clifford Morin.m4a';
@@ -10,6 +11,7 @@ import watts2 from 'assets/audio/Along came betty Jeff tain watts and clifford M
 import watts3 from 'assets/audio/Inner urge Jeff tain watts and clifford Morin dou.m4a';
 import watts4 from 'assets/audio/Sonny moon for two Jeff tain clifford duo.m4a';
 import philly1 from "assets/audio/Sandu Chris's Victor Mekhi James Copy.m4a";
+import samAudio from 'assets/audio/Whisper Not Sammy dou at home copy.m4a';
 
 function chillHop() {
 	return [
@@ -69,11 +71,10 @@ function chillHop() {
 		},
 		//ADD MORE HERE
 		{
-			name: 'sozu',
-			cover:
-				'https://chillhop.com/wp-content/uploads/2021/05/1245c0271290a3196328c0cf4aaa910cd873dfe7-1024x1024.jpg',
-			artist: 'mommy, Sleepy Fish',
-			audio: 'https://mp3.chillhop.com/serve.php/?mp3=19062',
+			name: 'Whisper Not',
+			cover: philly,
+			artist: 'Sam Riessen (Guitar), Clifford Morin (EWI)',
+			audio: samAudio,
 			color: [ '#598CCE', '#EDD6D2' ],
 			id: uuidv4(),
 			active: false
