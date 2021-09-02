@@ -29,7 +29,6 @@ const Player = ({
 		});
 		setSongs(newSongs);
 		if (isPlaying) audioRef.current.play();
-		console.log('hey from the bro');
 	};
 	//event handlers
 	const playSongHandler = () => {
@@ -72,9 +71,9 @@ const Player = ({
 	//Trying to get key press handler to work
 
 	document.body.onkeyup = function(e) {
-		if (e.keyCode === 32) {
-			playSongHandler();
-		} else if (e.keyCode === 39) {
+		// if (e.keyCode === 32) {
+		// 	playSongHandler();}
+		if (e.keyCode === 39) {
 			skipTrackHandler('skip-forward');
 		} else if (e.keyCode === 37) {
 			skipTrackHandler('skip-back');
