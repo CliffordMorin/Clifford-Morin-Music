@@ -6,6 +6,7 @@ import philly from 'assets/img/cliffCloseUp/out1.jpeg';
 import samImg from 'assets/img/audioImg/sam.png';
 //audio
 import lofiAudio from 'assets/audio/poLofi.m4a';
+import LSD from 'assets/audio/LSD Experiment 1950s.mp3';
 import watts1 from 'assets/audio/Airegin Duo Jeff Tain Watts Clifford Morin.m4a';
 import watts2 from 'assets/audio/Along came betty Jeff tain watts and clifford Morin dou.m4a';
 import watts3 from 'assets/audio/Inner urge Jeff tain watts and clifford Morin dou.m4a';
@@ -16,10 +17,10 @@ import samAudio from 'assets/audio/Whisper Not Sammy dou at home copy.m4a';
 function chillHop() {
 	return [
 		{
-			name: 'Pocket Operator Lofi Jawn',
+			name: 'LSD Experiment 1950',
 			cover: lofiImg,
-			artist: 'Clifford Morin',
-			audio: lofiAudio,
+			artist: 'Clifford Morin (PO-32, PO-33, Saxophone), Glenn Gifford (Trumpet)',
+			audio: LSD,
 			color: [ '#E06BB9', '#2A336A' ],
 			id: uuidv4(),
 			active: true
