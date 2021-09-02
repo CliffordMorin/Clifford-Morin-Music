@@ -56,8 +56,6 @@ export default function ContactPage(props) {
 											<h2 className={classes.title}>Contact Me</h2>
 										</div>
 									</CardHeader>
-									<p className={classes.divider}>Email me</p>
-
 									<CardBody>
 										<EmailSection />
 									</CardBody>

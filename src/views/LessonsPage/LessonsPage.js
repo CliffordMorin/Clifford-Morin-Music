@@ -127,8 +127,8 @@ export default function LessonPage(props) {
 											tabIcon: Favorite,
 											tabContent: (
 												<GridContainer justify="center">
-													<GridItem xs={8} sm={8} md={4}>
-														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+													<GridItem xs={12} sm={8} md={6}>
+														<Card className={classes.textCenter}>
 															<CardBody>
 																<CardHeader
 																	color="success"
@@ -150,7 +150,7 @@ export default function LessonPage(props) {
 																<p>- Students Name here</p>
 															</CardBody>
 														</Card>
-														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+														<Card className={classes.textCenter}>
 															<CardBody>
 																<CardHeader color="info" className={classes.cardTitle}>
 																	Clarinet
@@ -169,7 +169,7 @@ export default function LessonPage(props) {
 																<p>- Students Name here</p>
 															</CardBody>
 														</Card>
-														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+														<Card className={classes.textCenter}>
 															<CardBody>
 																<CardHeader
 																	color="warning"
@@ -192,8 +192,8 @@ export default function LessonPage(props) {
 															</CardBody>
 														</Card>
 													</GridItem>
-													<GridItem xs={8} sm={8} md={4}>
-														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+													<GridItem xs={12} sm={8} md={6}>
+														<Card className={classes.textCenter}>
 															<CardBody>
 																<CardHeader
 																	color="primary"
@@ -215,7 +215,7 @@ export default function LessonPage(props) {
 																<p>- Students Name here</p>
 															</CardBody>
 														</Card>
-														<Card className={classes.textCenter} style={{ width: '15rem' }}>
+														<Card className={classes.textCenter}>
 															<CardBody>
 																<CardHeader
 																	color="success"

@@ -12,7 +12,7 @@ const AlbumSection = () => {
 	const classes = useStyles();
 	return (
 		<GridContainer>
-			<GridItem xs={12} sm={6} md={4}>
+			<GridItem xs={6} sm={6} md={4}>
 				<a href="https://soundcloud.com/samuel-d-nobles/sets/murmur" target="_blank">
 					<img
 						className={classes.img}
@@ -21,7 +21,7 @@ const AlbumSection = () => {
 					/>
 				</a>
 			</GridItem>
-			<GridItem xs={12} sm={6} md={4}>
+			<GridItem xs={6} sm={6} md={4}>
 				<a href="https://www.amazon.com/Latin-Pulse-Angy-Estrada/dp/B077V5Q7HP" target="_blank">
 					<img
 						className={classes.img}
