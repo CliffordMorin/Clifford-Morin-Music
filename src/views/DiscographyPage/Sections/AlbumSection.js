@@ -13,6 +13,18 @@ const AlbumSection = () => {
 	return (
 		<GridContainer>
 			<GridItem xs={6} sm={6} md={4}>
+				<a
+					href="https://open.spotify.com/album/6ktKMmUFJ4QVq9U12I3Tgy?si=FEMXHgaqS4yT4ZDU7r5sDQ"
+					target="_blank"
+				>
+					<img
+						className={classes.img}
+						src="https://m.media-amazon.com/images/I/614wvuMRI2L._UX358_FMwebp_QL85_.jpg"
+						alt="..."
+					/>
+				</a>
+			</GridItem>
+			<GridItem xs={6} sm={6} md={4}>
 				<a href="https://soundcloud.com/samuel-d-nobles/sets/murmur" target="_blank">
 					<img
 						className={classes.img}
