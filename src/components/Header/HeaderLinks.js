@@ -138,7 +138,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CliffordMorin21"
+            href="https://www.facebook.com/cliffordmorin.music"
             target="_blank"
             className={classes.navLink}
           >
@@ -155,7 +155,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/_mellamocliff_/"
+            href="https://www.instagram.com/cliffordmorin.music/"
             target="_blank"
             className={classes.navLink}
           >
