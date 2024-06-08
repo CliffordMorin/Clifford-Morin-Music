@@ -130,8 +130,8 @@ export default function LessonPage(props) {
                                 </CardHeader>
                                 <p>1 hr- $85</p>
                                 <p>30 min- $50</p>
-                                <p>1 hr (remote)- $40</p>
-                                <p>30 min (remote)- $70</p>
+                                <p>1 hr (remote)- $70</p>
+                                <p>30 min (remote)- $40</p>
                                 <p>
                                   Cancelation Policy: Please send an email or
                                   phone call within 24hrs of your scheduled
